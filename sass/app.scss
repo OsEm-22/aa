@@ -8,10 +8,10 @@ $card-border-radius: 18px;
 
 body {
   background-color: hsl(185, 75%, 39%);
-  background-image: url(../images/bg-pattern-top.svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -32rem left -15rem, bottom -36rem right -15rem;
 }
 
 @media screen and (min-width: 567px) {
@@ -21,6 +21,13 @@ body {
       letter-spacing: 2px;
     }
   }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .card {

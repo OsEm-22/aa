@@ -10768,10 +10768,9 @@ textarea.form-control-lg {
 }
 body {
   background-color: hsl(185deg, 75%, 39%);
-  background-image: url(../images/bg-pattern-top.svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -32rem left -15rem, bottom -36rem right -15rem;
 }
 
 @media screen and (min-width: 567px) {
@@ -10782,6 +10781,15 @@ body {
     letter-spacing: 2px;
   }
 }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 .card {
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
